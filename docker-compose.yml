@@ -10,10 +10,10 @@ services:
     - db-volume:/var/lib/postgresql/data
 
   api:
-    image: praticandoapi/praticando-api
+    image: dockerleonardosanches/praticando-api
     environment:
       DB_HOST: database
     ports:
-      - "8080:8080"
+      - "9090:9090"
 volumes:
   db-volume:
